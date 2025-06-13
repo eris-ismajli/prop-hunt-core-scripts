@@ -1,0 +1,82 @@
+local clockBackground = script.Parent.Background2 
+local textBackground = script.Parent.Background1
+local text = script.Parent.TextLabel
+local swoosh = game.Workspace.Swoosh1
+
+game.ReplicatedStorage.Status:GetPropertyChangedSignal("Value"):Connect(function()
+	clockBackground:TweenPosition(
+		UDim2.new(0.567, 0, 0.032, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	task.wait(0.3)
+
+	clockBackground:TweenPosition(
+		UDim2.new(0.485, 0, 0.032, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	textBackground:TweenSizeAndPosition(
+		UDim2.new(0.025, 0, 0.047, 0),
+		UDim2.new(0.491, 0, 0.044, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	text:TweenSizeAndPosition(
+		UDim2.new(0.025, 0, 0.038, 0),
+		UDim2.new(0.491, 0, 0.052, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	task.wait(0.3)
+	swoosh:Play()
+
+	textBackground:TweenSizeAndPosition(
+		UDim2.new(0.164, 0, 0.07, 0),
+		UDim2.new(0.419, 0, 0.029, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	clockBackground:TweenPosition(
+		UDim2.new(0.567, 0, 0.032, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	text:TweenSizeAndPosition(
+		UDim2.new(0.121, 0, 0.038, 0),
+		UDim2.new(0.44, 0, 0.048, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+	task.wait(0.3)
+
+	clockBackground:TweenPosition(
+		UDim2.new(0.567, 0, 0.009, 0),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		0.25,
+		false
+	)
+
+end)
