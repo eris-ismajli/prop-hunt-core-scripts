@@ -1,3 +1,6 @@
+-- I am aware this script absolutely stinks but atleast it does the job
+---------------------------------------------------------------------------------
+
 local xrayID = 1076336957
 local tauntRadarID = 1076802596
 local SpeedBoostID = 1075553716
