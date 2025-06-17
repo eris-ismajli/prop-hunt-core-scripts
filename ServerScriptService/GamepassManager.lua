@@ -1,4 +1,5 @@
--- I am aware this script absolutely stinks but atleast it does the job
+-- I am aware that this script and every script revolving around the gamepass system stinks
+-- but hey! it does the job!
 ---------------------------------------------------------------------------------
 
 local xrayID = 1076336957
